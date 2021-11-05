@@ -1,0 +1,73 @@
+body {
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+* {
+  box-sizing: border-box;
+}
+
+.white {
+  background-color: #ffce9e;
+}
+.black {
+  background-color: #d18b47;
+}
+
+.chess-board {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  border: 1vw solid transparent;
+  max-width: 480px;
+  max-height: 480px;
+  width: 100vw;
+  height: 100vw;
+}
+
+.chess-board div,
+.coord-char div {
+  width: 12.5%;
+  height: 12.5%;
+}
+
+.MuiCard-root {
+  width: 100vw;
+  max-width: 480px;
+}
+
+.chess-board div img {
+  height: 100%;
+}
+
+@media screen and (min-width: 480px) {
+  .board {
+    border: 18px solid transparent;
+    box-shadow: 0 15px 15px -5px rgba(0, 0, 0, 0.75);
+  }
+}
+
+.main-div {
+  display: flex;
+}
+
+.coord-char {
+  margin-top: 1vw;
+}
+
+.char .coord-char .digit,
+.chess-board .character {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.coord.red {
+  color: red;
+}
+
